@@ -1,0 +1,64 @@
+body{
+  margin: 0px;
+  padding:0px;
+  background-image: linear-gradient(skyblue,pink,white);
+  height: 100vh;
+}
+.header{
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  font-family: sans-serif ;
+  font-size: 34px;
+  font-weight: 400px;
+  font-style: italic;
+  
+  
+}
+.links{
+  color: white;
+  text-decoration: none;
+}
+.links:hover{
+  color: blueviolet;
+}
+.innerHeader{
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between; 
+}
+.studheader{
+  font-size: 30px;
+  font-weight: bold;
+}
+.addStudent{
+  border:1px solid black;
+  border-radius: 16px;
+  padding: 2px 24px;
+  font-size: 24px;
+  font-weight: 200px;
+  
+}
+.tableContainer{
+  width: 90%;
+  margin: 0 auto;
+
+}
+table{
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  
+}
+tr{
+  border-bottom:2px solid #ddd;
+}
+.editText{
+  /* text-decoration: underline; */
+  /* cursor: pointer; */
+}
