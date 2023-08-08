@@ -9,19 +9,21 @@ import EditStudent from './EditStudent';
 
 function RouteCompo() {
     const [studentData , setStudentData] = useState([
-        {Name:'John' , Age:23 , Course:"MERN" , Batch:"oct" , Change:"Edit" },
-        {Name:'Mike' , Age:24 , Course:"MEAN" , Batch:"sept" , Change:"Edit" },
-        {Name:'Harry' , Age:23 , Course:"Python" , Batch:"oct" , Change:"Edit" },
-        {Name:'Kate' , Age:26 , Course:"JS" , Batch:"nov" , Change:"Edit" },
-        {Name:'Pal' , Age:22 , Course:"MERN" , Batch:"dec" , Change:"Edit" },
+        {Name:'John' , Age:23 , Course:"MERN" , Batch:"oct" , },
+        {Name:'Mike' , Age:24 , Course:"MEAN" , Batch:"sept" },
+        {Name:'Harry' , Age:23 , Course:"Python" , Batch:"oct" },
+        {Name:'Kate' , Age:26 , Course:"JS" , Batch:"nov" },
+        {Name:'Pal' , Age:22 , Course:"MERN" , Batch:"dec" },
 
     ])
     return (
         <>
           <BrowserRouter>
-          <NavLink to={'/'}>Home</NavLink>
-          <NavLink to={'/Student'}>Student</NavLink>
-          <NavLink to={'/Contact'}>Contact</NavLink>
+          <div className="header">
+          <NavLink className="links" to={'/'}>Home</NavLink>
+          <NavLink className="links" to={'/Student'}>Student</NavLink>
+          <NavLink className="links" to={'/Contact'}>Contact</NavLink>
+          </div>
           <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='/Contact' element={<Contact/>}/>

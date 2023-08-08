@@ -1,4 +1,5 @@
 import React from 'react'
+// import './App.css';
 import StoreData from './Store'
 import {useContext} from 'react'
 import { Link, useNavigate } from 'react-router-dom';
@@ -30,7 +31,7 @@ function Student() {
                             <td style={{textAlign:"right"}}>{item.Age}</td>
                             <td style={{textAlign:"right"}}>{item.Course}</td>
                             <td style={{textAlign:"right"}}>{item.Batch}</td>
-                            <td ><Link state={{data:index}} to='/editstudent'>edit</Link></td>
+                            <td ><Link style={{display: 'flex', justifyContent: 'right'}} state={{data:index}} to='/editstudent'>edit</Link></td>
                         </tr>
                     )
 
